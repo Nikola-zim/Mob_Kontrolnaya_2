@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">task_2</string>
+    <string name="Header">Регистрация посетителей </string>
+    <string name="Next">Далее</string>
+    <string name="full_name">ФИО</string>
+    <string name="age">Возраст</string>
+    <string name="time">Время прихода</string>
+    <string name="e_mail">Почта</string>
+    <string name="end">Завершить регистрацию</string>
+    <string name="Visitor_list_header">Список посетителей: </string>
+</resources>

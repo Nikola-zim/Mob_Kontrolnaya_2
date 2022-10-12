@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#7E1919"
+        android:text="@string/Header"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/age"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/time"
+        android:inputType="datetime" />
+    <EditText
+        android:id="@+id/e_mail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="writeNext"
+        android:text="@string/Next"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="finish_and_show"
+        android:text="@string/end"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Visitor_list_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#7E1919"
+        android:text="@string/Visitor_list_header"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/show_all_visitors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
